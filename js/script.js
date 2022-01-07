@@ -7,7 +7,7 @@ burger.addEventListener("click", function(e) {
 });
 
 
-
+// popup 
 
 const popupLinks = document.querySelectorAll('.popup-link'); // ссылки на попапы (html)
 const body = document.querySelector('body'); // для блокировки скролла в боди
