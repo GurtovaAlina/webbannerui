@@ -8,6 +8,7 @@ burger.addEventListener("click", function(e) {
 
 
 
+
 const popupLinks = document.querySelectorAll('.popup-link'); // ссылки на попапы (html)
 const body = document.querySelector('body'); // для блокировки скролла в боди
 const lockPadding = document.querySelectorAll('.lock-padding'); //для фиксированных объектов (шапка)
