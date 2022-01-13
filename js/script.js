@@ -20,12 +20,14 @@ popupLinkOpen.addEventListener("click", function(e) {
 popupLinkClose.addEventListener("click", function(e) {
     popup.classList.remove('open');
     document.body.classList.remove('lock');
+    e.preventDefault();
 });
 
 popup.addEventListener("click", function(e) {
     if (!e.target.closest('.popup__content')) {
         popup.classList.remove('open');
         document.body.classList.remove('lock');
+        e.preventDefault();
     }
 });
 
