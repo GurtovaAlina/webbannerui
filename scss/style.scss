@@ -63,7 +63,7 @@ body {
                 linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
     @include respond-to(1350) {
         padding: 0 0 0 30px;
-        background: url("../img/banner.png") bottom right / 80%  no-repeat,
+        background: url("../img/banner.png") 150% bottom / 80%  no-repeat,
                     url("../img/bubble.png") top right / 50% 100% no-repeat,
                     linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
     }
@@ -258,6 +258,12 @@ body {
 .main {
     max-width: 830px;
     padding: 0 0 190px 0;
+    @include respond-to(1350){
+        max-width: 60%;
+    }
+    @include respond-to(770){
+        max-width: 100%;
+    }
 }
 .main__title {
     font-weight: 600;
