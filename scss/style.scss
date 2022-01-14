@@ -83,8 +83,9 @@ body {
     justify-content: space-between;
     align-items: center;
     @include adaptiv-value("margin-bottom", 280, 10, 0);
-    padding: 50px 0 0 0;
+    @include adaptiv-value("padding-top", 50, 10, 0);
 }
+
 .header__logo {
     display: flex;
     align-items: center;
@@ -134,13 +135,7 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0px 100px 0px 0;
-    @media (max-width: 1350px) {
-        margin: 0px 30px 0px 0;
-    }
-    @media (max-width: 570px) {
-        margin: 0px 10px 0px 0;
-    }
+    @include adaptiv-value("margin-right", 100, 10, 0);
 }
 
 .header__list > li {
@@ -170,14 +165,8 @@ body {
     max-height: 80px;
     background: #ECF2F6;
     border-radius: 40px;
-    margin: 0px 120px 0 0;
+    @include adaptiv-value("margin-right", 120, 10, 0);
     cursor: pointer;
-    @media (max-width: 1350px) {
-        margin: 0px 30px 0 0;
-    }
-    @media (max-width: 570px) {
-        margin: 0px 10px 0 0;
-    }
 }
 
 .header__burger.active {
@@ -275,39 +264,19 @@ body {
 }
 .main__title {
     font-weight: 600;
-    font-size: 80px;
-    line-height: 120px;
     padding: 0 10px 0 0;
-    margin: 0 0 30px 0;
-    @media (max-width: 1350px) {
-        font-size: 70px;
-    }
-    @media (max-width: 770px) {
-        font-size: 50px;
-        line-height: 60px;
-    }
-    @media (max-width: 570px) {
-        font-size: 30px;
-        line-height: 40px;
-        margin: 0 0 10px 0;
-    }
+    @include adaptiv-value("font-size", 80, 30, 0);
+    @include adaptiv-value("line-height", 120, 40, 0);
+    @include adaptiv-value("margin-bottom", 30, 10, 0);
 }
 
 .main__text {
     font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
+    @include adaptiv-value("font-size", 24, 18, 0);
+    @include adaptiv-value("line-height", 36, 20, 0);
     color: rgba(65, 65, 65, 0.5);
-    margin: 0 0 60px 0;
+    @include adaptiv-value("margin-bottom", 60, 20, 0);
     padding: 0 20px 0 0;
-    @media (max-width: 770px) {
-        margin: 0 0 30px 0;
-    }
-    @media (max-width: 570px) {
-        font-size: 18px;
-        line-height: 20px;
-        margin: 0 0 10px 0;
-    }
 }
 
 .main__button {

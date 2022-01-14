@@ -150,7 +150,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: calc(10px + 270 * ((100vw - 320px) / 1600));
-  padding: 50px 0 0 0;
+  padding-top: calc(10px + 40 * ((100vw - 320px) / 1600));
 }
 
 .header__logo {
@@ -227,19 +227,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0px 100px 0px 0;
-}
-
-@media (max-width: 1350px) {
-  .header__list {
-    margin: 0px 30px 0px 0;
-  }
-}
-
-@media (max-width: 570px) {
-  .header__list {
-    margin: 0px 10px 0px 0;
-  }
+  margin-right: calc(10px + 90 * ((100vw - 320px) / 1600));
 }
 
 .header__list > li {
@@ -275,20 +263,8 @@ body {
   max-height: 80px;
   background: #ECF2F6;
   border-radius: 40px;
-  margin: 0px 120px 0 0;
+  margin-right: calc(10px + 110 * ((100vw - 320px) / 1600));
   cursor: pointer;
-}
-
-@media (max-width: 1350px) {
-  .header__burger {
-    margin: 0px 30px 0 0;
-  }
-}
-
-@media (max-width: 570px) {
-  .header__burger {
-    margin: 0px 10px 0 0;
-  }
 }
 
 .header__burger.active {
@@ -405,54 +381,19 @@ body {
 
 .main__title {
   font-weight: 600;
-  font-size: 80px;
-  line-height: 120px;
   padding: 0 10px 0 0;
-  margin: 0 0 30px 0;
-}
-
-@media (max-width: 1350px) {
-  .main__title {
-    font-size: 70px;
-  }
-}
-
-@media (max-width: 770px) {
-  .main__title {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-
-@media (max-width: 570px) {
-  .main__title {
-    font-size: 30px;
-    line-height: 40px;
-    margin: 0 0 10px 0;
-  }
+  font-size: calc(30px + 50 * ((100vw - 320px) / 1600));
+  line-height: calc(40px + 80 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
 }
 
 .main__text {
   font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: calc(18px + 6 * ((100vw - 320px) / 1600));
+  line-height: calc(20px + 16 * ((100vw - 320px) / 1600));
   color: rgba(65, 65, 65, 0.5);
-  margin: 0 0 60px 0;
+  margin-bottom: calc(20px + 40 * ((100vw - 320px) / 1600));
   padding: 0 20px 0 0;
-}
-
-@media (max-width: 770px) {
-  .main__text {
-    margin: 0 0 30px 0;
-  }
-}
-
-@media (max-width: 570px) {
-  .main__text {
-    font-size: 18px;
-    line-height: 20px;
-    margin: 0 0 10px 0;
-  }
 }
 
 .main__button {
