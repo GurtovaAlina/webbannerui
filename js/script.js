@@ -29,3 +29,26 @@ popup.addEventListener("click", function(e) {
     }
 });
 
+
+const wrapper = document.querySelector('.wrapper');
+wrapperWidth = wrapper.clientWidth;
+wrapperHeight = wrapper.clientHeight;
+console.log(wrapperWidth);
+console.log(wrapperHeight);
+const main = document.querySelector('.main');
+if (wrapperWidth > wrapperHeight) {
+    wrapper.style.cssText = `
+    background: url("img/banner.png") 150% bottom / 80%  no-repeat,
+                    url("img/bubble.png") top right / 50% 100% no-repeat,
+                    linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
+    `;
+    main.style.maxWidth = "60%";
+
+} else {
+    wrapper.style.cssText = `
+    background: url("img/banner.png") bottom right / 100% no-repeat,
+                url("img/bubble.png") top right no-repeat,
+                linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
+    `;
+    main.style.maxWidth = "100%";
+}
