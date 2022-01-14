@@ -25,6 +25,24 @@
     }
 
 
+// брейкпоинты
+$mv1350: 1350px;
+$mv770: 770px;
+$mv570: 570px;
+
+@mixin respond-to($media) {
+  @if $media == 1350 {
+    @media only screen and (max-width: $mv1350) { @content; }
+  }
+  @else if $media == 770 {
+    @media only screen and (max-width: $mv770) { @content; }
+  }
+  @else if $media == 570 {
+    @media only screen and (max-width: $mv570) { @content; }
+  }
+}
+
+
 body {
     font-family: Poppins;
     color: #414141;
@@ -42,18 +60,18 @@ body {
     background: url("../img/banner.png") bottom right no-repeat,
                 url("../img/bubble.png") top right no-repeat,
                 linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
-    @media (max-width: 1350px) {
+    @include respond-to(1350) {
         padding: 0 0 0 30px;
         background: url("../img/banner.png") bottom right / 80%  no-repeat,
                     url("../img/bubble.png") top right / 50% 100% no-repeat,
                     linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
     }
-    @media (max-width: 770px) {
+    @include respond-to(770) {
         background: url("../img/banner.png") bottom right / 100%  no-repeat,
                     url("../img/bubble.png") top right / 50% 100% no-repeat,
                     linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
     }
-    @media (max-width: 570px) {
+    @include respond-to(570) {
         padding: 0 0 0 10px;
     }
 }
