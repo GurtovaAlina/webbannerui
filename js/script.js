@@ -43,8 +43,8 @@ if (wrapperWidth > wrapperHeight) {
                     linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
     `;
     main.style.maxWidth = "60%";
-
-} else {
+} 
+if  (wrapperWidth < wrapperHeight) {
     wrapper.style.cssText = `
     background: url("img/banner.png") bottom right / 100% no-repeat,
                 url("img/bubble.png") top right no-repeat,

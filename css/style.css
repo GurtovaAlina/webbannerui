@@ -118,21 +118,6 @@ body {
   background: url("../img/banner.png") bottom right no-repeat, url("../img/bubble.png") top right no-repeat, linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
 }
 
-@media only screen and (max-width: 1350px) {
-  .wrapper {
-    padding: 0 0 0 30px;
-    background: url("../img/banner.png") 150% bottom/80% no-repeat, url("../img/bubble.png") top right/50% 100% no-repeat, -webkit-gradient(linear, left top, right top, from(#ECF2F6), to(#FFFFFF));
-    background: url("../img/banner.png") 150% bottom/80% no-repeat, url("../img/bubble.png") top right/50% 100% no-repeat, linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .wrapper {
-    background: url("../img/banner.png") bottom right/100% no-repeat, url("../img/bubble.png") top right/50% 100% no-repeat, -webkit-gradient(linear, left top, right top, from(#ECF2F6), to(#FFFFFF));
-    background: url("../img/banner.png") bottom right/100% no-repeat, url("../img/bubble.png") top right/50% 100% no-repeat, linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
-  }
-}
-
 @media only screen and (max-width: 570px) {
   .wrapper {
     padding: 0 0 0 10px;
@@ -372,18 +357,6 @@ body {
   max-width: 830px;
   padding: 0 0 190px 0;
   padding-bottom: calc(10px + 180 * ((100vw - 320px) / 1600));
-}
-
-@media only screen and (max-width: 1350px) {
-  .main {
-    max-width: 60%;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .main {
-    max-width: 100%;
-  }
 }
 
 .main__title {
