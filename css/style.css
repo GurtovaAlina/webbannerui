@@ -74,6 +74,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+/*--------- Адаптивный шрифт и свойства -----------*/
+/* @import "_adaptiv"; */
+/*
+Пример (можно для padding-left, margin-bottom, font-size):
+.block__body { 
+    @include adaptiv-value("padding", 50, 20, 0);
+}
+*/
+/*--------------------*/
 @font-face {
   font-family: 'Gilroy Black';
   src: url("../fonts/Gilroy-Black.eot");
