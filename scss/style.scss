@@ -66,6 +66,17 @@ body {
     @include respond-to(570) {
         padding: 0 0 0 10px;
     }
+
+    @media screen and (orientation:portrait) {
+        background: url("../img/banner.png") bottom right / 100% no-repeat,
+                    url("../img/bubble.png") top right no-repeat,
+                    linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
+    }
+    @media screen and (orientation:landscape) {
+        background: url("../img/banner.png") 150% bottom / 80%  no-repeat,
+        url("../img/bubble.png") top right / 50% 100% no-repeat,
+        linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
+    }
 }
 
 
@@ -250,6 +261,15 @@ body {
     max-width: 830px;
     padding: 0 0 190px 0;
     @include adaptiv-value("padding-bottom", 190, 10, 0);
+
+    @media screen and (orientation:portrait) {
+        max-width: 100%;
+    }
+    
+    @media screen and (orientation:landscape) {
+        max-width: 60%;
+    }
+
 }
 .main__title {
     font-weight: 600;
