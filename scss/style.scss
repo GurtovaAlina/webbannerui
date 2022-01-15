@@ -69,7 +69,7 @@ body {
 
     @media screen and (orientation:portrait) {
         background: url("../img/banner.png") bottom right / 100% no-repeat,
-                    url("../img/bubble.png") top right no-repeat,
+                    url("../img/bubble.png") top right / 50% 100% no-repeat,
                     linear-gradient(90deg, #ECF2F6 0%, #FFFFFF 100%);
     }
     @media screen and (orientation:landscape) {
